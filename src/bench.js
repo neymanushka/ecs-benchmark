@@ -15,6 +15,7 @@ const LIBRARIES = [
   "picoes",
   "tiny-ecs",
   "wolf-ecs",
+  "tick-knock"
 ];
 
 const BENCHMARKS = {

@@ -15,6 +15,7 @@
     "makr": "^2.1.1",
     "perform-ecs": "^0.7.8",
     "picoes": "^1.0.0",
+    "tick-knock": "^4.0.0",
     "tiny-ecs": "^2.0.0",
     "wolf-ecs": "^0.8.2"
   },
