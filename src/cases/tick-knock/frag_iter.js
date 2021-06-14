@@ -16,16 +16,14 @@ export default (count) => {
 		Function("Component", `return class ${name} extends Component {}`)(Component)
   	);
 
-
 	const queryData = new Query(entity => entity.has(DataComponent));
-
 	engine.addQuery(queryData);
 
 	for (let i = 0; i < count; i++) {
-		for (let Comp of COMPS) {
+		for (const comp of COMPS) {
 			const entity = new Entity();
-			entity.addComponent(Comp)
-			entity.addComponent(DataComponent);
+			entity.addComponent(new comp())
+			entity.addComponent(new DataComponent());
 			engine.addEntity(entity);
 		}
   	}

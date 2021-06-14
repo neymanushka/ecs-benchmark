@@ -20,13 +20,13 @@ export default (count) => {
 	}
 
 	return () => {
-		queryA.entities.forEach((entity)=>{
+		for(const entity of queryA.entities){
 			entity.addComponent(new ComponentB());
-		});
+		};
 
-		queryB.entities.forEach((entity)=>{
+		for(const entity of queryB.entities){
 			entity.removeComponent(ComponentB);
-		});
+		};
   	};
 }
 
